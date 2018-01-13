@@ -12,6 +12,10 @@
 		74AAE0F8200A03A2009FB80C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74AAE0F6200A03A2009FB80C /* Main.storyboard */; };
 		74AAE0FA200A03A2009FB80C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74AAE0F9200A03A2009FB80C /* Assets.xcassets */; };
 		74AAE0FD200A03A2009FB80C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74AAE0FB200A03A2009FB80C /* LaunchScreen.storyboard */; };
+		74AAE106200A04B4009FB80C /* ChannelDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74AAE105200A04B4009FB80C /* ChannelDataManager.swift */; };
+		74AAE109200A05A5009FB80C /* Channels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74AAE108200A05A5009FB80C /* Channels.swift */; };
+		74AAE10B200A06C9009FB80C /* Programme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74AAE10A200A06C9009FB80C /* Programme.swift */; };
+		74AAE10D200A0A74009FB80C /* SuperTV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74AAE10C200A0A74009FB80C /* SuperTV.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		74AAE0F9200A03A2009FB80C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		74AAE0FC200A03A2009FB80C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		74AAE0FE200A03A2009FB80C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		74AAE105200A04B4009FB80C /* ChannelDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelDataManager.swift; sourceTree = "<group>"; };
+		74AAE108200A05A5009FB80C /* Channels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Channels.swift; sourceTree = "<group>"; };
+		74AAE10A200A06C9009FB80C /* Programme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Programme.swift; sourceTree = "<group>"; };
+		74AAE10C200A0A74009FB80C /* SuperTV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperTV.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +62,8 @@
 		74AAE0F1200A03A2009FB80C /* SuperTV */ = {
 			isa = PBXGroup;
 			children = (
+				74AAE107200A0578009FB80C /* Models */,
+				74AAE104200A048E009FB80C /* Managers */,
 				74AAE0F2200A03A2009FB80C /* AppDelegate.swift */,
 				74AAE0F4200A03A2009FB80C /* ChannelViewController.swift */,
 				74AAE0F6200A03A2009FB80C /* Main.storyboard */,
@@ -62,6 +72,24 @@
 				74AAE0FE200A03A2009FB80C /* Info.plist */,
 			);
 			path = SuperTV;
+			sourceTree = "<group>";
+		};
+		74AAE104200A048E009FB80C /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				74AAE105200A04B4009FB80C /* ChannelDataManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		74AAE107200A0578009FB80C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				74AAE108200A05A5009FB80C /* Channels.swift */,
+				74AAE10A200A06C9009FB80C /* Programme.swift */,
+				74AAE10C200A0A74009FB80C /* SuperTV.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +165,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				74AAE0F5200A03A2009FB80C /* ChannelViewController.swift in Sources */,
+				74AAE10D200A0A74009FB80C /* SuperTV.swift in Sources */,
+				74AAE109200A05A5009FB80C /* Channels.swift in Sources */,
+				74AAE106200A04B4009FB80C /* ChannelDataManager.swift in Sources */,
+				74AAE10B200A06C9009FB80C /* Programme.swift in Sources */,
 				74AAE0F3200A03A2009FB80C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -277,6 +309,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 76C3HHDWZV;
 				INFOPLIST_FILE = SuperTV/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.freeubi.SuperTV;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -292,6 +325,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 76C3HHDWZV;
 				INFOPLIST_FILE = SuperTV/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.freeubi.SuperTV;
 				PRODUCT_NAME = "$(TARGET_NAME)";
