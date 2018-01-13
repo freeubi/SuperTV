@@ -18,9 +18,20 @@ class ChannelViewController: UIViewController {
 
     @IBAction func getChannelData(_ sender: Any) {
         
-        let channelManager = ChannelDataManager()
+        let superTVManager = SuperTVDataManager()
         
-        channelManager.getChannelData()
+        superTVManager.getChannelData {
+            (result, error) in
+            
+            guard let superTV = result else {
+                //error while getChanelData
+                
+                dump(error)
+                return
+            }
+            
+            
+        }
         
     }
 }

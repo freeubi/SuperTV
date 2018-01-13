@@ -30,5 +30,4 @@ public struct Channels : Codable {
          title = try values.decodeIfPresent(String.self, forKey: .title)
          programme = try values.decodeIfPresent([Programme].self, forKey: .programme)
     }
-    
 }

@@ -12,7 +12,7 @@
 		74AAE0F8200A03A2009FB80C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74AAE0F6200A03A2009FB80C /* Main.storyboard */; };
 		74AAE0FA200A03A2009FB80C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74AAE0F9200A03A2009FB80C /* Assets.xcassets */; };
 		74AAE0FD200A03A2009FB80C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74AAE0FB200A03A2009FB80C /* LaunchScreen.storyboard */; };
-		74AAE106200A04B4009FB80C /* ChannelDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74AAE105200A04B4009FB80C /* ChannelDataManager.swift */; };
+		74AAE106200A04B4009FB80C /* SuperTVDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74AAE105200A04B4009FB80C /* SuperTVDataManager.swift */; };
 		74AAE109200A05A5009FB80C /* Channels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74AAE108200A05A5009FB80C /* Channels.swift */; };
 		74AAE10B200A06C9009FB80C /* Programme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74AAE10A200A06C9009FB80C /* Programme.swift */; };
 		74AAE10D200A0A74009FB80C /* SuperTV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74AAE10C200A0A74009FB80C /* SuperTV.swift */; };
@@ -26,7 +26,7 @@
 		74AAE0F9200A03A2009FB80C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		74AAE0FC200A03A2009FB80C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		74AAE0FE200A03A2009FB80C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		74AAE105200A04B4009FB80C /* ChannelDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelDataManager.swift; sourceTree = "<group>"; };
+		74AAE105200A04B4009FB80C /* SuperTVDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperTVDataManager.swift; sourceTree = "<group>"; };
 		74AAE108200A05A5009FB80C /* Channels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Channels.swift; sourceTree = "<group>"; };
 		74AAE10A200A06C9009FB80C /* Programme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Programme.swift; sourceTree = "<group>"; };
 		74AAE10C200A0A74009FB80C /* SuperTV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperTV.swift; sourceTree = "<group>"; };
@@ -77,7 +77,7 @@
 		74AAE104200A048E009FB80C /* Managers */ = {
 			isa = PBXGroup;
 			children = (
-				74AAE105200A04B4009FB80C /* ChannelDataManager.swift */,
+				74AAE105200A04B4009FB80C /* SuperTVDataManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -167,7 +167,7 @@
 				74AAE0F5200A03A2009FB80C /* ChannelViewController.swift in Sources */,
 				74AAE10D200A0A74009FB80C /* SuperTV.swift in Sources */,
 				74AAE109200A05A5009FB80C /* Channels.swift in Sources */,
-				74AAE106200A04B4009FB80C /* ChannelDataManager.swift in Sources */,
+				74AAE106200A04B4009FB80C /* SuperTVDataManager.swift in Sources */,
 				74AAE10B200A06C9009FB80C /* Programme.swift in Sources */,
 				74AAE0F3200A03A2009FB80C /* AppDelegate.swift in Sources */,
 			);
