@@ -16,6 +16,9 @@ public struct Programme: Codable {
     let start_date : Date?
     let end_date : Date?
     
+    /*let start_date : String?
+    let end_date : String?*/
+    
     enum CodingKeys: String, CodingKey {
         
         case title = "title"
@@ -28,6 +31,7 @@ public struct Programme: Codable {
         let values = try decoder.container(keyedBy: CodingKeys.self)
         
         title = try values.decodeIfPresent(String.self, forKey: .title)
+                
         start_date = try values.decodeIfPresent(Date.self, forKey: .start_date)
         end_date = try values.decodeIfPresent(Date.self, forKey: .end_date)
         

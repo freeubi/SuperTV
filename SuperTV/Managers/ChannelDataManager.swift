@@ -11,7 +11,7 @@ import UIKit
 class ChannelDataManager: NSObject {
 
     // MARK: - Properties
-    let dataURL = URL(string:"https://gist.github.com/reden87/0fa57b0f4b3f16efa52b553359c29832")
+    let dataURL = URL(string:"https://gist.githubusercontent.com/reden87/ad856e7994b8ea93ac27503ecb051347/raw/050c539749f3d253a01ad685983ebc8503ea7872/example.json")
     
     enum ChannelDataError: Error {
         case noData
@@ -61,9 +61,11 @@ class ChannelDataManager: NSObject {
                 completionHandler(nil, ChannelDataError.noData)
                 return
             }
+
+            let jsonString = String(data: responseData, encoding: .utf8)!
+            dump(jsonString)
             
-            dump(responseData)
-            
+            self.parseJsonDataToSuperTV(fromData: responseData)
             //success
             
             //completionHandler(responseData, nil)
@@ -72,13 +74,18 @@ class ChannelDataManager: NSObject {
         task.resume()
     }
     
-    private func parseJsonDataToSuperTV(jsonString: String) {
+    private func parseJsonDataToSuperTV(fromData: Data) {
 
-/*
-        let encoder = JSONEncoder()
+        let decoder = JSONDecoder()
         
-        let data = try encoder.encode(jsonString)
+        //format: "2017-01-16T20:19:32Z"
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss'Z'"
         
-        //print(String(data: data, encoding: .utf8)!)*/
+        decoder.dateDecodingStrategy = .formatted(dateFormatter)
+        
+        let superTV = try! decoder.decode(SuperTV.self, from: fromData)
+        
+        dump(superTV)
     }
 }
