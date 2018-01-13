@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SuperTVDataManager: NSObject {
+class SuperTVDataManager: NSObject, SuperTVDataManagerProtocol {
 
     // MARK: - Properties
     private let dataURL = URL(string:"https://gist.githubusercontent.com/reden87/ad856e7994b8ea93ac27503ecb051347/raw/050c539749f3d253a01ad685983ebc8503ea7872/example.json")
@@ -81,8 +81,11 @@ class SuperTVDataManager: NSObject {
         decoder.dateDecodingStrategy = .formatted(dateFormatter)
         
         if let superTV = try? decoder.decode(SuperTV.self, from: fromData) {
+            
+            dump(superTV)
             return superTV
         }else {
+            
             return nil
         }
     }

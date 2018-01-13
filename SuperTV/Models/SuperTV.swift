@@ -22,6 +22,5 @@ public struct SuperTV: Codable {
         let values = try decoder.container(keyedBy: CodingKeys.self)
         
         channels = try values.decodeIfPresent([Channels].self, forKey: .channels)        
-    }
-    
+    }    
 }
