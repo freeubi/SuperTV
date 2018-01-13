@@ -16,5 +16,12 @@ class ChannelViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
 
+    @IBAction func getChannelData(_ sender: Any) {
+        
+        let channelManager = ChannelDataManager()
+        
+        channelManager.getChannelData()
+        
+    }
 }
 

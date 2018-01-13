@@ -16,8 +16,6 @@ public struct Programme: Codable {
     let start_date : Date?
     let end_date : Date?
     
-    
-    
     enum CodingKeys: String, CodingKey {
         
         case title = "title"
